@@ -48,7 +48,7 @@ if __name__ == '__main__':
         dfs.append(df_extracao)
 
     df = pd.concat(dfs)
-    df.to_csv('expectativas.csv', sep=';', decimal=",", index=False)
+    df.to_csv('../processed/expectativas_mensais.csv', sep=';', decimal=",", index=False)
 
     # Caso tenha api key do googlesheets
     # GSHEET_ID = ENV['GSHEET_ID']
