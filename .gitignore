@@ -1,3 +1,4 @@
 expectativas.csv
 venv
 processed/
+src/gtoken/*

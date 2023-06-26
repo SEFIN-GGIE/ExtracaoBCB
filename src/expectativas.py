@@ -14,11 +14,11 @@ Seleções:
 Expec informadas últ 5 dias | Mediana
 """
 
-em = Expectativas()
-ep = em.get_endpoint('ExpectativaMercadoMensais')
+def extracao_expectativas(indicador, data_min, endpoint):
+    
+    em = Expectativas()
+    ep = em.get_endpoint(endpoint)
 
-
-def extracao_expectativas(indicador, data_min):
     df = (
         ep.query()
         .filter(ep.Indicador == f'{indicador}')
